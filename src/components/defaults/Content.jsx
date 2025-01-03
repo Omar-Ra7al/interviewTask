@@ -5,8 +5,8 @@ import { FaLocationDot } from "react-icons/fa6";
 const Content = () => {
   const { t } = useTranslation();
   const fieldClass =
-    "w-full lg:w-2/4 flex flex-wrap items-center justify-center  sm:justify-between gap-2 py-2 text-center px-1 border border-main/10 rounded-md overflow-hidden";
-  const inputClass = "h-full border-none outline-none py-2";
+    "w-full lg:w-2/4 flex flex-wrap items-center justify-center  sm:justify-between gap-2 py-2 sm:py-0 text-center px-1 border border-main/10 rounded-md overflow-hidden";
+  const inputClass = "flex-1 placeholder:text-center sm:placeholder:text-start h-full border-none outline-none py-2";
   return (
     <section
       className="w-full h-full mb-32 md:mb-16 bg-white border border-main/10
@@ -37,11 +37,11 @@ const Content = () => {
           <div className={fieldClass}>
             <CiShop className="text-2xl" />
             <input
-              className={`flex-1 placeholder:text-center sm:placeholder:text-start ${inputClass}`}
+              className={` ${inputClass}`}
               type="text"
               placeholder="Store Name"
             />
-            <select className={`cursor-pointer ${inputClass}`}>
+            <select className={`cursor-pointer h-full`}>
               <option>English</option>
               <option>عربي</option>
             </select>

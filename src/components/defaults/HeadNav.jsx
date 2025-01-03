@@ -20,7 +20,7 @@ const HeadNav = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="flex items-center justify-between w-full h-20 bg-main px-12 md:bg-gray-100 md:p-0 md:justify-end">
+    <div className="flex items-center justify-between gap-x-3 w-full h-20 bg-main px-12 md:bg-gray-100 md:p-0 md:justify-end">
       {/* Language buttons */}
       <div className="flex gap-2 md:gap-0 md:flex-col justify-center items-center">
         <button className={btnClass} onClick={() => changeLanguage("en")}>
