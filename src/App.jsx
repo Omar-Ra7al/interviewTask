@@ -1,5 +1,5 @@
 // Components >>
-import HeadNav from "./components/defaults/headNav";
+import HeadNav from "./components/defaults/HeadNav";
 import SideNav from "./components/defaults/SideNav";
 import Content from "./components/defaults/Content";
 import FooterMsg from "./components/defaults/FooterMsg";
