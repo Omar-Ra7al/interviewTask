@@ -66,14 +66,12 @@ const Content = () => {
             className={`${fieldClass} flex-wrap gap-2 p-2 text-center
              `}>
             <div>
-              <p className="text-md">Website Icon in the browser</p>
-              <p className="text-xs text-main/50">
-                the best size is 32px x 32px
-              </p>
+              <p className="text-md">{t("iconMsg")}</p>
+              <p className="text-xs text-main/50">{t("iconMsg2")}</p>
             </div>
-            <button type="file" className="flex items-center gap-x-2">
-              <FaLocationDot className="text-2xl" />
-              change wbsite icon
+            <button type="file" className="flex gap-x-2">
+              <FaLocationDot className="text-xl font-bold" />
+              {t("changeIcon")}
             </button>
           </div>
 

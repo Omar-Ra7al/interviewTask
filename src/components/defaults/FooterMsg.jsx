@@ -7,8 +7,8 @@ const FooterMsg = () => {
   const { t } = useTranslation();
   return (
     <div
-      className="fixed bottom-0 z-50 flex flex-row-reverse flex-wrap items-center justify-center gap-x-2
-                w-full bg-main text-white text-center border-t-2 py-3 border-main/10 ">
+      className="fixed bottom-0 z-50 flex flex-row-reverse flex-wrap items-center justify-center gap-2
+                w-full bg-main text-white text-center border-t-2 py-3 px-6 border-main/10  ">
       {t("footerMsg")}
       <button className="bg-secondary text-white px-4 py-2 rounded-md">
         {t("createStore")}

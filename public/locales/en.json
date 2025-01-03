@@ -22,5 +22,9 @@
   "updateLogo": "Update image",
   "isLogoSmall": "Logo showen small",
   "storeDescription": "The happiens in your store is reflected in the Salla app, so you can sell your products and services with ease and without any commission. Start your business today with Salla easily and without any commission! ",
-  "address": "Sauid Aarbia "
+  "address": "Sauid Aarbia ",
+  "iconMsg": "Website Icon in the browser",
+  "iconMsg2": "the best size is 32px x 32px",
+  "changeIcon": "change Website icon",
+  "save": "Save"
 }
