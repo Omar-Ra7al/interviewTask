@@ -109,7 +109,7 @@ const Links = () => {
 
   // Style >>
   const linkClass =
-    "flex flex-row-reverse text-white items-center gap-x-2 px-3 py-2 transition-colors duration-150 hover:bg-black/20";
+    "flex text-white items-center gap-x-2 px-3 py-2 transition-colors duration-150 hover:bg-black/20";
   return (
     <div>
       <ul className="flex flex-col gap-y-2 mt-6">
@@ -153,7 +153,7 @@ const SideNav = ({ toggle }) => {
   console.log(toggle);
   return (
     <nav
-      className={`fixed top-20 right-0  z-50 py-4 h-screen w-64 bg-main text-white transform transition-transform duration-300 ${
+      className={`fixed top-20 right-0 overflow-scroll custom-scrollbar z-50 w-64 h-screen py-6 bg-main text-white transform transition-transform duration-300 ${
         toggle ? "translate-x-0" : "translate-x-full"
       } md:translate-x-0`}>
       <SpecialSite />

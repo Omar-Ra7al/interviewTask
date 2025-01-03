@@ -20,7 +20,7 @@ const HeadNav = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="w-full bg-main md:bg-gray-200 px-12  md:p-0    flex  items-center  justify-between md:justify-end  h-20 ">
+    <div className="flex items-center justify-between w-full h-20 bg-main px-12 md:bg-gray-100 md:p-0 md:justify-end">
       {/* Language buttons */}
       <div className="flex gap-2 md:gap-0  md:flex-col justify-center items-center">
         <button className={btnClass} onClick={() => changeLanguage("en")}>
@@ -44,7 +44,7 @@ const HeadNav = () => {
       </div>
       <SideNav toggle={toggle} />
       {toggle && (
-        <div className="absolute z-40 top-20 right-0 h-screen w-full backdrop-blur-sm bg-black/10 text-white transform transition-transform duration-300"></div>
+        <div className="md:hidden absolute z-40 top-20 right-0 h-screen w-full backdrop-blur-sm bg-black/10 text-white transform transition-transform duration-300"></div>
       )}
     </div>
   );
