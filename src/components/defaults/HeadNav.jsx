@@ -30,7 +30,6 @@ const HeadNav = () => {
           العربية
         </button>
       </div>
-
       {/* Logo */}
       <div className={`md:fixed top-0 right-0 h-20 px-3 ${navLogoClass} `}>
         <Logo />
@@ -44,6 +43,9 @@ const HeadNav = () => {
         />
       </div>
       <SideNav toggle={toggle} />
+      {toggle && (
+        <div className="absolute z-50 top-20 right-0 h-screen w-full bg-black/10 text-white transform transition-transform duration-300"></div>
+      )}
     </div>
   );
 };
