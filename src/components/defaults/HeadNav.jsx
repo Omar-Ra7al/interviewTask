@@ -24,10 +24,10 @@ const HeadNav = () => {
       {/* Language buttons */}
       <div className="flex gap-2 md:gap-0 md:flex-col justify-center items-center">
         <button className={btnClass} onClick={() => changeLanguage("en")}>
-          English
+          En
         </button>
         <button className={btnClass} onClick={() => changeLanguage("ar")}>
-          العربية
+          Ar
         </button>
       </div>
       {/* Logo */}
