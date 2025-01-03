@@ -1,14 +1,13 @@
 // Locals >>
 import { useTranslation } from "react-i18next";
-// Constants >>
-import { navLogoClass } from "../../constants/constants";
+
 // Icons >>
 import { PiGitBranchLight } from "react-icons/pi";
 import { MdArrowBackIos } from "react-icons/md";
 import { LuCrown } from "react-icons/lu";
 import { BiHome } from "react-icons/bi";
+// React >>
 import { cloneElement } from "react";
-
 const SpecialSite = () => {
   const { t } = useTranslation();
   return (
@@ -150,10 +149,13 @@ const Links = () => {
     </div>
   );
 };
-const SideNav = () => {
+const SideNav = ({ toggle }) => {
+  console.log(toggle);
   return (
     <nav
-      className={`fixed h-screen overflow-scroll iphone-scrollbar  right-0 top-20 ${navLogoClass}`}>
+      className={`fixed top-20 right-0 h-screen w-64 bg-main text-white transform transition-transform duration-300 ${
+        toggle ? "translate-x-0" : "translate-x-full"
+      } md:translate-x-0`}>
       <SpecialSite />
       <Links />
     </nav>

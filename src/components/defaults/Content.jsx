@@ -63,10 +63,10 @@ const Content = () => {
             />
           </div>
           <div
-            className={`flex-wrap gap-2 p-2 ju
-             ${fieldClass}`}>
+            className={`${fieldClass} flex-wrap gap-2 p-2 text-center
+             `}>
             <div>
-              <p className="text-lg">Website Icon in the browser</p>
+              <p className="text-md">Website Icon in the browser</p>
               <p className="text-xs text-main/50">
                 the best size is 32px x 32px
               </p>

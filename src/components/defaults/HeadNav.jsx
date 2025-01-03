@@ -4,6 +4,9 @@ import Logo from "../shared/Logo";
 import { useTranslation } from "react-i18next";
 // Constants >>
 import { navLogoClass } from "../../constants/constants";
+import { FaGripLines } from "react-icons/fa";
+import { useState } from "react";
+import SideNav from "./SideNav";
 
 // Styles >>
 const btnClass =
@@ -14,11 +17,12 @@ const HeadNav = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
+  const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="w-full bg-gray-200 flex justify-end h-20">
+    <div className="w-full bg-main md:bg-gray-200 px-12  md:p-0    flex  items-center  justify-between md:justify-end  h-20 ">
       {/* Language buttons */}
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex gap-2 md:gap-0  md:flex-col justify-center items-center">
         <button className={btnClass} onClick={() => changeLanguage("en")}>
           English
         </button>
@@ -28,9 +32,18 @@ const HeadNav = () => {
       </div>
 
       {/* Logo */}
-      <div className={`fixed top-0 right-0 h-20 px-3 ${navLogoClass} `}>
+      <div className={`md:fixed top-0 right-0 h-20 px-3 ${navLogoClass} `}>
         <Logo />
       </div>
+      <div className="md:hidden">
+        <FaGripLines
+          className="text-2xl text-white cursor-pointer"
+          onClick={() => {
+            setToggle(!toggle);
+          }}
+        />
+      </div>
+      <SideNav toggle={toggle} />
     </div>
   );
 };
