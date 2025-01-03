@@ -44,7 +44,7 @@ const HeadNav = () => {
       </div>
       <SideNav toggle={toggle} />
       {toggle && (
-        <div className="absolute z-50 top-20 right-0 h-screen w-full bg-black/10 text-white transform transition-transform duration-300"></div>
+        <div className="absolute z-40 top-20 right-0 h-screen w-full backdrop-blur-sm bg-black/10 text-white transform transition-transform duration-300"></div>
       )}
     </div>
   );

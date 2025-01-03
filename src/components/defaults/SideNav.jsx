@@ -153,7 +153,7 @@ const SideNav = ({ toggle }) => {
   console.log(toggle);
   return (
     <nav
-      className={`fixed top-20 py-4 right-0 h-screen w-64 bg-main text-white transform transition-transform duration-300 ${
+      className={`fixed top-20 right-0  z-50 py-4 h-screen w-64 bg-main text-white transform transition-transform duration-300 ${
         toggle ? "translate-x-0" : "translate-x-full"
       } md:translate-x-0`}>
       <SpecialSite />
