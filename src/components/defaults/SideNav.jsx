@@ -148,14 +148,12 @@ const Links = () => {
     </div>
   );
 };
-
 const SideNav = ({ toggle }) => {
-  console.log(toggle);
   return (
     <nav
-      className={`fixed top-20 right-0 overflow-scroll custom-scrollbar z-50 w-64 h-screen py-6 bg-main text-white transform transition-transform duration-300 ${
-        toggle ? "translate-x-0" : "translate-x-full"
-      } md:translate-x-0`}>
+      className={`fixed top-20 right-0 overflow-scroll custom-scrollbar z-50 w-64 h-screen py-6 pb-32 md:pb-12 
+        bg-main text-white transform transition-transform duration-300 
+        ${toggle ? "translate-x-0" : "translate-x-full"} md:translate-x-0`}>
       <SpecialSite />
       <Links />
     </nav>
